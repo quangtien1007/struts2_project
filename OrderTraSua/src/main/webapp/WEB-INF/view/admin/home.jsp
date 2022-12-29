@@ -17,6 +17,14 @@
 </head>
 <body style="background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);font-family: 'Unbounded', cursive;">
+<h2 id="title" style="text-align: center; color:#000;">Xin chào Admin</h2>
+<script type="text/javascript">
+	const title = setTimeout(hideTitle,3000); 
+	function hideTitle(){
+		document.getElementById("title").display = "none";
+	}
+	
+</script>
  <h1 style="color:	#ff4500; font-size: 40pt; text-align: center; margin-bottom:25px">Trang quản lý</h1>
 		<div style="text-align:center">
 	    	<img src="http://file.hstatic.net/1000075078/article/br_bigc_go_01_91959531eb4b4e42a5ed6f53a445b92f.jpg" style="height:450px">

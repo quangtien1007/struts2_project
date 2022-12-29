@@ -56,8 +56,15 @@ public class LoginAction extends ActionSupport implements SessionAware {
 		} else {
 			addActionMessage("Đăng nhập thất bại");
 			System.out.println("Login fail");
-			return "fail";
+			return "error";
 		}
+	}
+
+	public String logout() {
+		//User nd = new UserDAO().login(tendangnhap, matkhau);
+		//if (nd != null) {
+//			session.remove("nguoidung", nd);
+			return "success";
 	}
 
 }

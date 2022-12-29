@@ -43,6 +43,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 			style="height: 380px; width: 100%"> -->
 	</div>
 	<a href="logout" style="font-size: 20px">Đăng xuất</a>
+	<h3>Xin chào quý khách </h3>
 	<br />
 	<h1
 		style="text-align: center; font-size: 49pt; color: #ff4500; margin-top: 5px">Menu</h1>

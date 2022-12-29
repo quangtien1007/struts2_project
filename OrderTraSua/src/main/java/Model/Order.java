@@ -7,8 +7,10 @@ public class Order {
 	int soluong;
 	int gia;
 	int thanhtien;
+	String tencaphe;
+	String hinhanh;
 	
-	public Order(int id, int idnguoidung, int idloaicaphe, int soluong, int gia, int thanhtien) {
+	public Order(int id, int idnguoidung, int idloaicaphe, int soluong, int gia, int thanhtien, String tencaphe, String hinhanh) {
 		super();
 		this.id = id;
 		this.idnguoidung = idnguoidung;
@@ -16,8 +18,24 @@ public class Order {
 		this.soluong = soluong;
 		this.gia = gia;
 		this.thanhtien = thanhtien;
+		this.tencaphe = tencaphe;
+		this.hinhanh = hinhanh;
+	}
+	public String getTencaphe() {
+		return tencaphe;
 	}
 
+	public void setTencaphe(String tencaphe) {
+		this.tencaphe = tencaphe;
+	}
+
+	public String getHinhanh() {
+		return hinhanh;
+	}
+
+	public void setHinhanh(String hinhanh) {
+		this.hinhanh = hinhanh;
+	}
 	public int getId() {
 		return id;
 	}

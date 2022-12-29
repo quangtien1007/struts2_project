@@ -24,8 +24,7 @@ a:hover {
 
 </head>
 <body
-	style="background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); font-family: 'Unbounded', cursive;">
+	style="background: rgb(238, 174, 202); background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); font-family: 'Unbounded', cursive;">
 
 	<div style="text-align: center">
 		<img
@@ -45,8 +44,12 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 				<s:form action="submitOrderAction" method="POST" validate="true">
 
 					<s:textfield label="Tên cà phê" readonly="true"
+					name="ten"
 						value='%{foodorder.ten}'
 						style="width:350px; height:25px; font-size:20px; margin-bottom:10px" />
+					<s:textfield type="hidden"
+						name="hinh"
+						value='%{foodorder.hinh}'/>
 					<s:textfield
 						style="width:350px; height:25px; font-size:20px; margin-bottom:10px;text-align:right"
 						id="gia" name="gia" label="Giá" value='%{foodorder.gia}'

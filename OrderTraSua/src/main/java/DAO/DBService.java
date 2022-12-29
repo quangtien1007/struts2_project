@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBService {
 	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://192.168.206.25:3306/COFFEE?allowPublicKeyRetrieval=true&useSSL=false";
+	static final String DB_URL = "jdbc:mysql://192.168.40.139:3306/COFFEE?allowPublicKeyRetrieval=true&useSSL=false";
 	static final String USER = "dbuser";
 	static final String PASS = "p@ssword";
 	Connection conn = null;

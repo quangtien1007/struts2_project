@@ -28,6 +28,7 @@ public class FoodDAO {
 		}
 		return list;
 	}
+	
 
 	public Food getFoodByID(int id) {
 		Food food = null;
@@ -65,17 +66,19 @@ public class FoodDAO {
 		}
 	}
 
-	public void Order(int idnguoidung, int idloaicaphe, int soluong, int gia, int thanhtien) {
+	public void Order(int idnguoidung, int idloaicaphe, int soluong, int gia, int thanhtien, String tencaphe, String hinhanh) {
 		DBService db = new DBService();
 		PreparedStatement statement;
 		try {
 			statement = db.getConn().prepareStatement("INSERT INTO COFFEE.`ORDER` \r\n"
-					+ "(idnguoidung, idloaicaphe, soluong, gia, thanhtien)\r\n" + "VALUES( ?, ?, ?, ?, ?);");
+					+ "(idnguoidung, idloaicaphe, soluong, gia, thanhtien, tencaphe, hinhanh)\r\n" + "VALUES( ?, ?, ?, ?, ?, ?, ?);");
 			statement.setInt(1, idnguoidung);
 			statement.setInt(2, idloaicaphe);
 			statement.setInt(3, soluong);
 			statement.setInt(4, gia);
 			statement.setInt(5, thanhtien);
+			statement.setString(6,tencaphe);
+			statement.setString(7, hinhanh);
 			db.executeUpdate(statement);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

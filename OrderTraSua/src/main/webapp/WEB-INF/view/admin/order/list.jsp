@@ -37,9 +37,10 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 	<p>  <a style="color:#ff6a6a; font-size: 22pt; margin-top:5px; margin-bottom:10px" href="homeAdminAction">Trang chủ</a></p>
 	<div>
 		<table style="font-size: 18pt; text-align: center; width:100%">
-			<tr>
-				<th>ID người dùng</th>
-				<th>ID loại trà sữa</th>
+		<tr>
+			 	<th>STT</th>
+				<th>Tên cà phê</th>
+				<th>Hình ảnh</th>
 				<th>Số lượng</th>
 				<th>Giá</th>
 				<th>Thành tiền</th>
@@ -48,8 +49,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 			
 			<s:iterator var="order" value="orderlist" >
 				<tr>
-					<td><s:property value="idnguoidung"/></td>
-					<td><s:property value="idloaicaphe"/></td>
+					<td><s:property value="id"/></td>
+					<td><s:property value="tencaphe"/></td>
+					<td><img src="./././././img/<s:property value="hinhanh"/>"  width="100px"></td>
 					<td><s:property value="soluong"/></td>
 					<td><s:property value="gia"/> VNĐ</td>
 					<td><s:property value="thanhtien"/> VNĐ</td>

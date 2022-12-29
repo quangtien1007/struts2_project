@@ -19,6 +19,23 @@ public class OrderAction extends ActionSupport implements SessionAware {
 	private int soluong;
 	private int gia;
 	private int thanhtien;
+	private String ten,hinh;
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public String getHinh() {
+		return hinh;
+	}
+
+	public void setHinh(String hinh) {
+		this.hinh = hinh;
+	}
 
 	private String message;
 
